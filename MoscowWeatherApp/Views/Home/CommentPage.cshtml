@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Comment";
+}
+@{
+    string text = "";
+    if (ViewBag.CommentType == "FileError")
+    {
+        text = "файл не соответствует требованиям";
+
+        <div class="alert alert-danger text-center" role="alert">
+            <p>ВНИМАНИЕ</p>
+            <p>@text</p>
+        </div>
+        return;
+    }
+
+    if (ViewBag.CommentType == "Ok")
+    {
+        text = "Файл успешно загружен";
+
+        <div class="alert alert-success text-center" role="alert">
+            <p>ВНИМАНИЕ</p>
+            <p>@text</p>
+        </div>
+
+        foreach (var item in (List<string>)ViewBag.FilesNames)
+        {
+            <h5>@item</h5>
+        }
+        return;
+    }
+}
+
