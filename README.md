@@ -2,4 +2,5 @@
 
 
 
-https://github.com/Mariks14/MoscowWeatherApp/assets/92689098/5a43a33a-69e8-4855-90be-1d97fcc084b3
+
+https://github.com/Mariks14/MoscowWeatherApp/assets/92689098/60e1e433-9376-407e-b3fe-e85f1bb80943
